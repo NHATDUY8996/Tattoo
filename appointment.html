@@ -1,0 +1,403 @@
+<?php 
+	$dm='http://localhost/nhatduy__buoi7/';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+    <script type="text/javascript" src="public/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Đặt lịch hẹn</title>
+
+</head>
+<style>
+    .banner {
+        padding: 20px;
+        font-family: "Oswald", sans-serif;
+    }
+
+    .banner img {
+        width: 366px;
+    }
+
+    .banner span {
+        font-size: 16px;
+        margin: 4px;
+    }
+
+    .banner a:hover {
+        color: var(--color-primary);
+        scale: 1.1;
+    }
+
+    .fieldset input {
+        margin: 10px !important;
+    }
+
+    .form-control {
+        padding: 30px;
+        color: var(--color-black);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .btnhover {
+        padding: 20px 40px;
+        margin: 20px 0;
+    }
+
+    strong {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .service_booking {
+        background-image: url(/img/background/bg-booking.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 767px) {
+        .banner img {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <div class="header row m0 cwhite" id="header">
+        <div class="d-flex justify-content-center bgprimary top-header align-items-center">
+            <div class="d-flex justify-content-center align-items-center me-5">
+                <i class="me-3 bi bi-clock"></i>
+                <span>Thời gian làm việc: Từ <strong>9h00</strong> đến <strong>22h00</strong></span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center ms-5 top-phone">
+                <i class="me-3 bi bi-telephone-fill"></i>
+                <span>Hotline: <strong> 0123 456 789</strong></span>
+            </div>
+        </div>
+        <div class="mid-header bgba pRl cprimary d-flex align-items-center">
+            <div class="mycontainer d-flex align-items-center ">
+                <input type="checkbox" id="header-nav" class="nav__input dn">
+                <label class="overlaynav dn cursor wh100 bgba pF" for="header-nav"></label>
+                <label class="nav__mobile cursor " for="header-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </label>
+                <div class="logo__small">
+                    <img src="./img/logo/logo.png" alt="">
+                </div>
+                <div class="menupc h100">
+                    <ul class="text-uppercase text-center wh100 m0">
+                        <li class="d-inline-block mx-5 itemmenu ">
+                            <a href="index.html" class=" linkmenu">Trang chủ</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="intro.html" class=" linkmenu" onclick="">Về chúng tôi</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu dropDownpc pRl">
+                            <a href="artwork.html" class=" linkmenu">Tác phẩm <i class="bi bi-chevron-down"></i></a>
+                            <div class="pAs dropdown__menupc bgw bshadow ">
+                                <ul class="">
+                                    <li>
+                                        <a href="">Hình xăm 3D</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm chân dung</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm Mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm tả thực</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm che thẹo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm phong thủy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="appointment.html" class="active linkmenu">Đặt lịch hẹn</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="new.html" class="linkmenu">Tin tức</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="contact.html" class="linkmenu">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="search cprimary cursor float-right pRl">
+                    <i class="bi bi-search"></i>
+                    <div class="searchhover pAs bshadow">
+                        <input type="search" class="bn" placeholder="Tìm kiếm ....">
+                        <button class="bn bgprimary btnsearch cwhite d-flex align-items-center">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </a>
+                <div class="nav__info pF bgprimary cwhite">
+                    <ul>
+                        <li>
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Về chúng tôi</a>
+                        </li>
+                        <li class="dropDown pRl d-flex flex-column align-items-baseline">
+                            <a class="d-flex justify-content-between w100">
+                                <span>Tác phẩm</span>
+                                <button class="bn bgprimary btnmenu" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#dropdown__menu"><i class="bi bi-chevron-right"></i></button>
+                            </a>
+                            <ul class="dropdown__menu w100 ps-3" id="dropdown__menu">
+                                <li>
+                                    <a href="">Hình xăm 3D</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm chân dung</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm Mini</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm tả thực</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm che thẹo</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm phong thủy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Đặt lịch hẹn</a>
+                        </li>
+                        <li>
+                            <a href="">Tác phẩm</a>
+                        </li>
+                        <li>
+                            <a href="">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- main -->
+    <div class="banner row m0 d-flex justify-content-center text-center">
+        <img src="./img/logo/logo_slider_1.png" alt="">
+        <h3>VỀ CHÚNG TÔI</h3>
+        <div class="text d-flex justify-content-center align-items-center">
+            <a href="index.html"><span>Trang chủ</span></a>
+            <span style="font-size: 15px;"><i class="bi bi-chevron-right"></i></span>
+            <span class="cprimary">Đặt lịch hẹn</span>
+        </div>
+    </div>
+
+    <div class="appointment row m0  bgw">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-8 col-12 text-center my-5">
+                <a class="title pRl cblack" href="">ĐẶT LỊCH</a>
+                <p class="textservice cblack">Hãy để lại thông tin đặt lịch đầy đủ sẽ được sắp xếp sớm hơn, không phải
+                    chờ đợi</p>
+                <div class="form-appointment d-flex flex-wrap my-5">
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4">
+                        <input placeholder="Họ tên:" type="text" class="form-control  form-control-lg" required=""
+                            value="" name="contact[Name]">
+                    </fieldset>
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4">
+                        <input placeholder="Dịch vụ xăm:" type="text" required="" id="content"
+                            class="form-control form-control-lg" name="contact[Dịch vụ xăm]">
+                    </fieldset>
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4">
+                        <input type="number" placeholder="Số điện thoại:" name="contact[phone]"
+                            class="form-control form-control-lg" required="">
+                    </fieldset>
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4">
+                        <input class="tourmaster-datepicker input-date form-control hasDatepicker" type="date"
+                            value="Ngày/Tháng/Năm:" placeholder="Ngày/Tháng/Năm:" data-date-format="dd MM yyyy">
+                    </fieldset>
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4">
+                        <input placeholder="Email:" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            required="" id="email1" class="form-control form-control-lg" value="" name="contact[email]">
+                    </fieldset>
+                    <fieldset class="col-lg-6 col-sm-12 col-12 my-4"><select name="contact[Giờ]" id="guiest_id1"
+                            class="select-drop form-control">
+                            <option>Giờ:</option>
+                            <option value="7h">7h</option>
+                            <option value="8h">8h</option>
+                            <option value="9h">9h</option>
+                            <option value="10h">10h</option>
+                            <option value="11h">11h</option>
+                            <option value="14h">14h</option>
+                            <option value="15h">15h</option>
+                            <option value="16h">16h</option>
+                            <option value="17h">17h</option>
+                        </select></fieldset>
+                    <fieldset class="col-lg-12 col-sm-12 col-12 my-4">
+                        <textarea placeholder="Nội dung:" name="contact[body]" id="comment"
+                            class="form-control content-area form-control-lg" rows="5" required=""></textarea>
+                    </fieldset>
+                </div>
+
+                <a href="" class="bgprimary cwhite btnhover my-5">Gửi thông tin</a>
+                <p class="cblack my-5">Hoặc liên hệ theo hotline: <strong class="cprimary">1800 6750</strong></p>
+
+                <div class="service_booking d-flex flex-wrap p-5">
+                    <div class="col-lg-4 col-12 col-sm-12 my-4">
+                        <img src="./img/icon/service_booking_1.png" alt="">
+                        <h3 class="cprimary text-uppercase">Ý tưởng sáng tạo</h3>
+                        <span class="summary_service cwhite1">Chúng tôi sẽ giúp các bạn biến những ý tưởng vô hình của
+                            mình thành những hình xăm tuyệt vời nhất</span>
+                    </div>
+                    <div class="col-lg-4 col-12 col-sm-12 my-4">
+                        <img src="./img/icon/service_booking_2.png" alt="">
+                        <h3 class="cprimary text-uppercase">Sạch sẽ và an toàn</h3>
+                        <span class="summary_service cwhite1">Chúng tôi tạo ra một môi trường thân thiện với tiêu chuẩn
+                            vệ sinh cao nhất khi bạn ghé thăm, cho dù để sở hữu hình xăm đầu tiên hay thêm một hình xăm
+                            mới vào bộ sưu tập của mình</span>
+                    </div>
+                    <div class="col-lg-4 col-12 col-sm-12 my-4">
+                        <img src="./img/icon/service_booking_3.png" alt="">
+                        <h3 class="cprimary text-uppercase">Nghệ sĩ đạt giải thưởng</h3>
+                        <span class="summary_service cwhite1">Các nghệ sĩ đoạt giải thưởng với nhiều phong cách khác
+                            nhau, tiêu chuẩn vệ sinh cao nhất và đội ngũ trợ lý nói tiếng Anh thân thiện</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <!-- footer  -->
+    <div class="footer row m0 p0">
+        <div class="footer__top bgba py-5">
+            <div class="mycontainer d-flex flex-wrap">
+                <div class="col-lg-5 col-sm-12 p0 ftTop1">
+                    <a href="">
+                        <img src="./img/logo/logo-footer.png" alt="">
+                    </a>
+                    <div class="py-3 fttext"><span class="bgprimary me-3"><i class="bi bi-geo-alt"></i></span> Tầng
+                        6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội,</div>
+                    <div class="py-3 fttext"><span class="bgprimary me-3"><i class="bi bi-stopwatch"></i></span> Giờ
+                        làm việc: Từ 9:00 đến 22:00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</div>
+                    <div class="cprimary ftlg"><span class="cwhite bgprimary me-3"><i
+                                class="bi bi-telephone-fill"></i></span> 1800 6750</div>
+                </div>
+                <div class="col-lg-7 col-sm-12 ftTop2">
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Dịch vụ</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                        <div class="icon mt-5">
+                            <a class="bgprimary me-3" href=""><i class="bi bi-youtube"></i></a>
+                            <a class="bgprimary me-3" href=""><i class="bi bi-facebook"></i></a>
+                            <a class="bgprimary me-3" href=""><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bgprimary cwhite d-flex text-center align-items-center justify-content-center">
+            <span class="pRl">© Bản quyền thuộc về <strong>Cafein Team</strong></span><span>Cung cấp bởi Sapo</span>
+        </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+
+</body>
+
+</html>

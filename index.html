@@ -1,0 +1,784 @@
+<?php 
+	$dm='http://localhost/nhatduy__buoi7/';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+    <script type="text/javascript" src="public/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Tattoo</title>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header row m0 cwhite" id="header">
+        <div class="d-flex justify-content-center bgprimary top-header align-items-center">
+            <div class="d-flex justify-content-center align-items-center me-5">
+                <i class="me-3 bi bi-clock"></i>
+                <span>Thời gian làm việc: Từ <strong>9h00</strong> đến <strong>22h00</strong></span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center ms-5 top-phone">
+                <i class="me-3 bi bi-telephone-fill"></i>
+                <span>Hotline: <strong> 0123 456 789</strong></span>
+            </div>
+        </div>
+        <div class="mid-header bgba pRl cprimary d-flex align-items-center">
+            <div class="mycontainer d-flex align-items-center ">
+                <input type="checkbox" id="header-nav" class="nav__input dn">
+                <label class="overlaynav dn cursor wh100 bgba pF" for="header-nav"></label>
+                <label class="nav__mobile cursor " for="header-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </label>
+                <div class="logo__small">
+                    <img src="./img/logo/logo.png" alt="">
+                </div>
+                <div class="menupc h100">
+                    <ul class="text-uppercase text-center wh100 m0">
+                        <li class="d-inline-block mx-5 itemmenu ">
+                            <a href="index.html" class="active linkmenu">Trang chủ</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="intro.html" class="linkmenu" onclick="">Về chúng tôi</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu dropDownpc pRl">
+                            <a href="artwork.html" class="linkmenu">Tác phẩm <i class="bi bi-chevron-down"></i></a>
+                            <div class="pAs dropdown__menupc bgw bshadow ">
+                                <ul class="">
+                                    <li>
+                                        <a href="">Hình xăm 3D</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm chân dung</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm Mini</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm tả thực</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm che thẹo</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Hình xăm phong thủy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="appointment.html" class="linkmenu">Đặt lịch hẹn</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="new.html" class="linkmenu">Tin tức</a>
+                        </li>
+                        <li class="d-inline-block mx-5 itemmenu">
+                            <a href="contact.html" class="linkmenu">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="search cprimary cursor float-right pRl">
+                    <i class="bi bi-search"></i>
+                    <div class="searchhover pAs bshadow">
+                        <input type="search" class="bn" placeholder="Tìm kiếm ....">
+                        <button class="bn bgprimary btnsearch cwhite d-flex align-items-center">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </a>
+                <div class="nav__info pF bgprimary cwhite">
+                    <ul>
+                        <li>
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="">Về chúng tôi</a>
+                        </li>
+                        <li class="dropDown pRl d-flex flex-column align-items-baseline">
+                            <a class="d-flex justify-content-between w100">
+                                <span>Tác phẩm</span>
+                                <button class="bn bgprimary btnmenu" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#dropdown__menu"><i class="bi bi-chevron-right"></i></button>
+                            </a>
+                            <ul class="dropdown__menu w100 ps-3" id="dropdown__menu">
+                                <li>
+                                    <a href="">Hình xăm 3D</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm chân dung</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm Mini</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm tả thực</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm che thẹo</a>
+                                </li>
+                                <li>
+                                    <a href="">Hình xăm phong thủy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Đặt lịch hẹn</a>
+                        </li>
+                        <li>
+                            <a href="">Tác phẩm</a>
+                        </li>
+                        <li>
+                            <a href="">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+
+    <!-- main -->
+    <div class="banner row m0 d-flex justify-content-center cursor">
+        <div class="col-6 d-flex justify-content-center align-items-center flex-column banner__info text-center">
+            <a href="http://127.0.0.1:5500/index.html"><img src="./img/logo/logo_slider_1.png" alt=""></a>
+            <h1 class="cprimary">Xăm mình nghệ thuật</h1>
+            <span class="cwhite">Để hình xăm đến gần hơn với cuộc sống
+                <br>Ghi dấu kỷ niệm đẹp, dấu ấn khó phai trong cuộc đời </span>
+            <button class="btnhover">Đặt lịch ngay</button>
+        </div>
+    </div>
+
+    <div class=" intro row m0 p0">
+        <div class="mycontainer d-flex">
+            <div class="intro-left col-6"></div>
+            <div class="intro-right col-6">
+                <span class="cwhite">Chào mừng đến với studio</span>
+                <h1 class="cprimary">TATTOO THIEN MINH</h1>
+                <p class="cprimary font-italic">"Hình xăm mang theo câu chuyện riêng về cuộc đời của mỗi khách
+                    hàng, và tôi kể lại nó bằng linh hồn mình qua những mũi kim."- Artist Thiên Minh</p>
+                <p class="dnone">Era tattoo là studio tiên phong trong thời kỳ cách mạng về xăm
+                    hình văn minh từ năm 2014, góp phần thay đổi định kiến
+                    của xã hội đối với bộ môn nghệ thuật cơ thể xứng đáng được coi trọng này.</p>
+                <p class="dnone">Chúng tôi luôn không ngừng trau dồi học hỏi và cập nhập những
+                    kỹ thuật, tri thức, dụng cụ tối tân để
+                    xăm đẹp hơn mỗi ngày, để hình xăm khách hàng nhận được là đẳng
+                    cấp thế giới - còn chi phí thì rất Việt
+                    Nam.</p>
+
+                <button class="btnhover">Tim hiểu thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="service row m0 text-center ">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-6 col-10">
+                <a class="title pRl cwhite" href="">Dịch vụ cung cấp</a>
+                <p class="textservice">Thợ tay nghề cao trên mười năm kinh nghiệm, có giấy phép hành nghề.
+                    Trang thiết bị vô cùng hiện đại. Địa chỉ xăm uy tín trên 10 năm kinh nghiệm.
+                    Được bảo hành trọn đời, giá xăm tốt nhất tại TPHCM.
+                </p>
+            </div>
+            <div class="owl-carousel my-4 servicecarousel owl-theme">
+                <div class="item">
+                    <div class="pRl h100 d-flex justify-content-center align-items-center flex-column">
+                        <div class="overlayservice pAs"></div>
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-24.jpg" alt="">
+                        <div class="blog-thumbnail pAs">
+                            <div
+                                class="content_blog d-flex justify-content-center align-items-center flex-column text-center">
+                                <img class="pen" src="./img/icon/pen_tattoo.png">
+                                <a href="" class="a-title">Đi tìm ý nghĩa hình xăm con hạc giấy trong cuộc sống</a>
+                                <div class="summary_blog">
+                                    <p>
+                                        Cũng giống như những hình xăm con vật khác, hình xăm con hạc cũng là 1 chủ đề
+                                        xăm hình được nhiều người tìm kiếm. Hình ảnh chim hạc đang sải cánh bay khiến
+                                        người ta khi nhìn cảm thấy được tự do, thoải mái chừng nào&nbsp;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 d-flex justify-content-center align-items-center flex-column">
+                        <div class="overlayservice pAs"></div>
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-35.jpg" alt="">
+                        <div class="blog-thumbnail pAs">
+                            <div
+                                class="content_blog d-flex justify-content-center align-items-center flex-column text-center">
+                                <img class="pen" src="./img/icon/pen_tattoo.png">
+                                <a href="" class="a-title">Đi tìm ý nghĩa hình xăm con hạc giấy trong cuộc sống</a>
+                                <div class="summary_blog">
+                                    <p>
+                                        Cũng giống như những hình xăm con vật khác, hình xăm con hạc cũng là 1 chủ đề
+                                        xăm hình được nhiều người tìm kiếm. Hình ảnh chim hạc đang sải cánh bay khiến
+                                        người ta khi nhìn cảm thấy được tự do, thoải mái chừng nào&nbsp;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 d-flex justify-content-center align-items-center flex-column">
+                        <div class="overlayservice pAs"></div>
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-34.jpg" alt="">
+                        <div class="blog-thumbnail pAs">
+                            <div
+                                class="content_blog d-flex justify-content-center align-items-center flex-column text-center">
+                                <img class="pen" src="./img/icon/pen_tattoo.png">
+                                <a href="" class="a-title">Đi tìm ý nghĩa hình xăm con hạc giấy trong cuộc sống</a>
+                                <div class="summary_blog">
+                                    <p>
+                                        Cũng giống như những hình xăm con vật khác, hình xăm con hạc cũng là 1 chủ đề
+                                        xăm hình được nhiều người tìm kiếm. Hình ảnh chim hạc đang sải cánh bay khiến
+                                        người ta khi nhìn cảm thấy được tự do, thoải mái chừng nào&nbsp;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 d-flex justify-content-center align-items-center flex-column">
+                        <div class="overlayservice pAs"></div>
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-33.jpg" alt="">
+                        <div class="blog-thumbnail pAs">
+                            <div
+                                class="content_blog d-flex justify-content-center align-items-center flex-column text-center">
+                                <img class="pen" src="./img/icon/pen_tattoo.png">
+                                <a href="" class="a-title">Đi tìm ý nghĩa hình xăm con hạc giấy trong cuộc sống</a>
+                                <div class="summary_blog">
+                                    <p>
+                                        Cũng giống như những hình xăm con vật khác, hình xăm con hạc cũng là 1 chủ đề
+                                        xăm hình được nhiều người tìm kiếm. Hình ảnh chim hạc đang sải cánh bay khiến
+                                        người ta khi nhìn cảm thấy được tự do, thoải mái chừng nào&nbsp;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btnhover my-4">Xem thêm</button>
+        </div>
+    </div>
+
+    <div class="artwork row m0 text-center bgprimary4">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-6 col-10">
+                <a class="title pRl cblack" href="">TÁC PHẨM TATTOO THIÊN MINH</a>
+                <p class="textservice cblack">Đây là Album do các Artist của Tattoo Thiên Minh thực hiện</p>
+
+            </div>
+            <div class="owl-carousel my-4 artworklistcarousel owl-theme">
+                <div class="item pRl artworkitem actives">
+                    <a href="" class="cblack active">HÌNH XĂM 3D</a>
+                </div>
+                <div class="item pRl artworkitem">
+                    <a href="" class="cblack">HÌNH XĂM CHÂN DUNG</a>
+                </div>
+                <div class="item pRl artworkitem">
+                    <a href="" class="cblack">HÌNH XĂM MINI</a>
+                </div>
+                <div class="item pRl artworkitem">
+                    <a href="" class="cblack">HÌNH XĂM TẢ THỰC</a>
+                </div>
+                <div class="item pRl artworkitem">
+                    <a href="" class="cblack">HÌNH XĂM CHE THẸO</a>
+                </div>
+                <div class="item pRl artworkitem">
+                    <a href="" class="cblack">HÌNH XĂM PHONG THỦY</a>
+                </div>
+            </div>
+            <div class="owl-carousel my-4 artworkcarousel owl-theme d-flex flex-wrap">
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-36.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl " style="height: 377px;">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-4.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="prince row m0  bgw">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center my-3">
+            <div class="col-lg-6 col-10 text-center">
+                <a class="title pRl cblack" href="">BÁO GIÁ DỊCH VỤ</a>
+                <p class="textservice cblack">Để giúp khách hàng dễ hình dung về mức giá của từng loại hình xăm,
+                    Tattoo Thiên Minh sẽ đưa ra 3 mức độ: LEVEL 1, LEVEL 2, LEVEL 3 tương ứng
+                    với sự tăng dần về độ khó, độ chi tiết, và thời gian thực hiện
+                </p>
+            </div>
+            <div class="owl-carousel princecarousel owl-theme ">
+                <div class="item">
+                    <div class="pRl h100 bd prince-item">
+                        <h2>Hình xăm phong thủy</h2>
+                        <div class="content_service">
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                        </div>
+                        <div class="btn-booking">
+                            <a href="#" title="Đặt lịch" class="btnhover">Đặt lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 bd prince-item">
+                        <h2>Hình xăm phong thủy</h2>
+                        <div class="content_service">
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                        </div>
+                        <div class="btn-booking">
+                            <a href="#" title="Đặt lịch" class="btnhover">Đặt lịch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 bd prince-item">
+                        <h2>Hình xăm phong thủy</h2>
+                        <div class="content_service">
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                            <p><b>Level 1: 500.000đ</b><br>
+                                Thời gian 15 - 30 phút
+                            </p>
+                        </div>
+                        <div class="btn-booking">
+                            <a href="#" title="Đặt lịch" class="btnhover">Đặt lịch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service row m0 text-center scales ">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-6 col-10 mb-5">
+                <a class="title pRl cwhite" href="">Tác phẩm nổi bật</a>
+            </div>
+            <div class="owl-carousel my-4 servicecarousel owl-theme">
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-24.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-35.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-34.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/main/wallpaperflare-com-wallpaper-33.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <button class="btnhover my-4">Xem thêm</button>
+        </div>
+    </div>
+    <div class="section row m0 pRl">
+        <div class="mycontainer d-flex justify-content-center align-items-center  flex-wrap text-center">
+            <div class="overlaysection pAs"></div>
+            <div class="section-left">
+                <h1 class="cwhite">KHUYẾN MÃI LÊN TỚI <strong class="cprimary">30%</strong> MÙA COVID</h1>
+            </div>
+            <div class="section-right">
+                <a href="" class="btnhover bgprimary">Đặt lịch ngay</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="artists row m0 text-center bgprimary1 ">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-6 col-10 mb-5 mt-5">
+                <a class="title pRl cwhite" href="">ARTISTS</a>
+                <p class="cwhite mt-5">Những Artist được đào tạo bài bản, kinh nghiệm nghề lâu năm uy tín trong ngành
+                    xăm</p>
+            </div>
+            <div class="owl-carousel my-4 artistscarousel owl-theme">
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/member/image_artist_1.png" alt="">
+                        <div class="artists__info mt-1">
+                            <span class="nameartists">Minh Art</span>
+                            <p class="titleartists cwhite">Chuyên thể loại Châu Á</p>
+                            <div class="icon">
+                                <a href="" class="btnhover"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-facebook"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/member/image_artist_2.png" alt="">
+                        <div class="artists__info mt-1">
+                            <span class="nameartists">Minh Art</span>
+                            <p class="titleartists cwhite">Chuyên thể loại Châu Á</p>
+                            <div class="icon">
+                                <a href="" class="btnhover"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-facebook"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pRl h100 ">
+                        <img class="bg" src="./img/member/image_artist_3.png" alt="">
+                        <div class="artists__info mt-1">
+                            <span class="nameartists">Minh Art</span>
+                            <p class="titleartists cwhite">Chuyên thể loại Châu Á</p>
+                            <div class="icon">
+                                <a href="" class="btnhover"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-facebook"></i></a>
+                                <a href="" class="btnhover"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="procedure row m0 bgw text-center">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center my-5 py-5">
+            <div class="col-lg-6 col-10 text-center">
+                <a class="title pRl cblack" href="">QUY TRÌNH LÀM VIỆC</a>
+                <p class="textservice cblack">Bạn có thể xăm hình lên bất cứ bộ phận nào của cơ thể, dù đó là
+                    nơi dễ nhìn thấy hay ẩn đi, xong bạn nên hiểu hình xăm có thể đi theo bạn suốt đời.
+                    Nên việc lựa chọn xăm hình gì, ở đâu,... rất quan trọng. Hay để chúng tôi
+                    giúp bạn dễ lựa chọn hơn theo quy trình sau:
+                </p>
+            </div>
+            <div class="owl-carousel procedurecarousel owl-theme ">
+                <div class="item">
+                    <div class="procedureimg">
+                        <img src="./img/main/image_step_1.webp" alt="">
+                    </div>
+                    <p class="cblack">ý tưởng</p>
+                </div>
+                <div class="item">
+                    <div class="procedureimg">
+                        <img src="./img/main/image_step_2.webp" alt="">
+                    </div>
+                    <p class="cblack">Thiết kế</p>
+                </div>
+                <div class="item">
+                    <div class="procedureimg">
+                        <img src="./img/main/image_step_3.webp" alt="">
+                    </div>
+                    <p class="cblack">báo giá</p>
+                </div>
+                <div class="item">
+                    <div class="procedureimg">
+                        <img src="./img/main/image_step_4.webp" alt="">
+                    </div>
+                    <p class="cblack">xăm mình</p>
+                </div>
+            </div>
+            <button class="btnhover mt-5">Đặt lịch ngay</button>
+        </div>
+    </div>
+
+    <!-- user -->
+    <div class="user row m0">
+        <div class="d-flex justify-content-center align-items-center text-center py-5 my-5">
+            <div class="col-lg-4 col-sm-12 h100 cwhite">
+                <div class="owl-carousel usercarousel owl-theme pRl">
+                    <div class="item d-flex justify-content-center flex-column align-items-center">
+                        <img src="./img/icon/dau-phay.webp" alt="">
+                        <p class="cwhite">
+                            "Em chẳng biết nói gì ngoài một từ "Tuyệt vời". Mọi thứ đều tuyệt. Từ con người,
+                            không gian, cách phục vụ và tuyệt vời nhất là tác phẩm mà artist Ngọc
+                            thực hiện cho em. Một địa chỉ xăm uy tín, chắc chắn e phải quay lại đây vài lần nữa."
+                        </p>
+                        <p class="cprimary">Phương Jeni</p>
+                    </div>
+                    <div class="item d-flex justify-content-center flex-column align-items-center">
+                        <img src="./img/icon/dau-phay.webp" alt="">
+                        <p class="cwhite">
+                            "Em chẳng biết nói gì ngoài một từ "Tuyệt vời". Mọi thứ đều tuyệt. Từ con người,
+                            không gian, cách phục vụ và tuyệt vời nhất là tác phẩm mà artist Ngọc
+                            thực hiện cho em. Một địa chỉ xăm uy tín, chắc chắn e phải quay lại đây vài lần nữa."
+                        </p>
+                        <p class="cprimary">Dũng idol</p>
+                    </div>
+                    <div class="item d-flex justify-content-center flex-column align-items-center">
+                        <img src="./img/icon/dau-phay.webp" alt="">
+                        <p class="cwhite">
+                            "Em chẳng biết nói gì ngoài một từ "Tuyệt vời". Mọi thứ đều tuyệt. Từ con người,
+                            không gian, cách phục vụ và tuyệt vời nhất là tác phẩm mà artist Ngọc
+                            thực hiện cho em. Một địa chỉ xăm uy tín, chắc chắn e phải quay lại đây vài lần nữa."
+                        </p>
+                        <p class="cprimary">Tuấn Công Bằng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- user -->
+
+    <!-- new -->
+    <div class="new row m0 bgw ">
+        <div class="mycontainer d-flex justify-content-center flex-column align-items-center">
+            <div class="col-lg-6 col-10 text-center">
+                <a class="title pRl cblack" href="">Tin tức</a>
+            </div>
+            <div class="cblack my-5 d-flex flex-wrap">
+                <div class="col-lg-4 col-12 blog">
+                    <div class="blog-img my-5">
+                        <img src="./img/main/wallpaperflare-com-wallpaper-8.jpg" alt="">
+                    </div>
+                    <div class="blog-info">
+                        <a href="" class="cblack">Mách nhỏ chăm sóc hình xăm mới với 4 bước đơn giản A - Z</a>
+                        <div class="d-flex ">
+                            <span class=""><i class="me-3 bi bi-person"></i>Cafein Team</span>
+                            <div class="line mx-4"></div>
+                            <span><i class="me-3 bi bi-clock"></i>Ngày 22/11/2021</span>
+                        </div>
+                        <div class="blog-summary">
+                            <p>
+                            Bước 1: Băng bảo vệ hình xăm ngay sau khi xăm và tháo băng sau 1 - 2 giờ
+                            <br>
+                            Bước 2: Trong 7 ngày đầu: Luôn rửa sạch hình xăm với xà phòng nhẹ và nước ấm ít nhất 3
+                            lần/ngày. Rửa vào buổi sáng sau khi ngủ dậy
+                            Tuyệt đối không sử dụng các loại xà phòng có nhiều hóa chất tạo mùi, tạo màu và chứa nhiều
+                            sút, axit
+                        </p>
+                        </div>
+                        <a href="" class="cblack">Xem thêm<i class="ms-3 bi bi-chevron-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 blog">
+                    <div class="blog-img my-5">
+                        <img src="./img/main/wallpaperflare-com-wallpaper-8.jpg" alt="">
+                    </div>
+                    <div class="blog-info">
+                        <a href="" class="cblack">Mách nhỏ chăm sóc hình xăm mới với 4 bước đơn giản A - Z</a>
+                        <div class="d-flex ">
+                            <span class=""><i class="me-3 bi bi-person"></i>Cafein Team</span>
+                            <div class="line mx-4"></div>
+                            <span><i class="me-3 bi bi-clock"></i>Ngày 22/11/2021</span>
+                        </div>
+                        <div class="blog-summary">
+                            <p>
+                            Bước 1: Băng bảo vệ hình xăm ngay sau khi xăm và tháo băng sau 1 - 2 giờ
+                            <br>
+                            Bước 2: Trong 7 ngày đầu: Luôn rửa sạch hình xăm với xà phòng nhẹ và nước ấm ít nhất 3
+                            lần/ngày. Rửa vào buổi sáng sau khi ngủ dậy
+                            Tuyệt đối không sử dụng các loại xà phòng có nhiều hóa chất tạo mùi, tạo màu và chứa nhiều
+                            sút, axit
+                        </p>
+                        </div>
+                        <a href="" class="cblack">Xem thêm<i class="ms-3 bi bi-chevron-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 blog">
+                    <div class="blog-img my-5">
+                        <img src="./img/main/wallpaperflare-com-wallpaper-8.jpg" alt="">
+                    </div>
+                    <div class="blog-info">
+                        <a href="" class="cblack">Mách nhỏ chăm sóc hình xăm mới với 4 bước đơn giản A - Z</a>
+                        <div class="d-flex ">
+                            <span class=""><i class="me-3 bi bi-person"></i>Cafein Team</span>
+                            <div class="line mx-4"></div>
+                            <span><i class="me-3 bi bi-clock"></i>Ngày 22/11/2021</span>
+                        </div>
+                        <div class="blog-summary">
+                            <p>
+                            Bước 1: Băng bảo vệ hình xăm ngay sau khi xăm và tháo băng sau 1 - 2 giờ
+                            <br>
+                            Bước 2: Trong 7 ngày đầu: Luôn rửa sạch hình xăm với xà phòng nhẹ và nước ấm ít nhất 3
+                            lần/ngày. Rửa vào buổi sáng sau khi ngủ dậy
+                            Tuyệt đối không sử dụng các loại xà phòng có nhiều hóa chất tạo mùi, tạo màu và chứa nhiều
+                            sút, axit
+                        </p>
+                        </div>
+                        <a href="" class="cblack">Xem thêm<i class="ms-3 bi bi-chevron-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- new -->
+    <!-- main -->
+
+    <!-- footer  -->
+    <div class="footer row m0 p0">
+        <div class="footer__top bgba py-5">
+            <div class="mycontainer d-flex flex-wrap">
+                <div class="col-lg-5 col-sm-12 p0 ftTop1">
+                    <a href="">
+                        <img src="./img/logo/logo-footer.png" alt="">
+                    </a>
+                    <div class="py-3 fttext"><span class="bgprimary me-3"><i class="bi bi-geo-alt"></i></span> Tầng
+                        6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội,</div>
+                    <div class="py-3 fttext"><span class="bgprimary me-3"><i class="bi bi-stopwatch"></i></span> Giờ
+                        làm việc: Từ 9:00 đến 22:00 các ngày trong tuần từ Thứ 2 đến Chủ nhật</div>
+                    <div class="cprimary ftlg"><span class="cwhite bgprimary me-3"><i
+                                class="bi bi-telephone-fill"></i></span> 1800 6750</div>
+                </div>
+                <div class="col-lg-7 col-sm-12 ftTop2">
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <h3 class="fttitle">Dịch vụ</h3>
+                        <ul>
+                            <li><a href="" class="linkhover">Trang chủ</a></li>
+                            <li><a href="" class="linkhover">Về chúng tôi</a></li>
+                            <li><a href="" class="linkhover">Tác phẩm</a></li>
+                            <li><a href="" class="linkhover">Đặt lịch hẹn</a></li>
+                            <li><a href="" class="linkhover">Tin tức</a></li>
+                            <li><a href="" class="linkhover">Liên hệ</a></li>
+                        </ul>
+                        <div class="icon mt-5">
+                            <a class="bgprimary me-3" href=""><i class="bi bi-youtube"></i></a>
+                            <a class="bgprimary me-3" href=""><i class="bi bi-facebook"></i></a>
+                            <a class="bgprimary me-3" href=""><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom bgprimary cwhite d-flex text-center align-items-center justify-content-center">
+            <span class="pRl">© Bản quyền thuộc về <strong>Cafein Team</strong></span><span>Cung cấp bởi Sapo</span>
+        </div>
+    </div>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
